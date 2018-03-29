@@ -14,7 +14,7 @@ ctx.verify_mode = ssl.CERT_NONE
 conn = sqlite3.connect('content.sqlite')
 cur = conn.cursor()
 
-baseurl = "https://api.data.gov.in/resource/1731b51f-8714-4b8f-9243-0526063da4a5?format=xml&api-key=579b464db66ec23bdd000001e54d9f049d9f423c7f0fea5b54317529"
+baseurl = "https://api.data.gov.in/resource/1731b51f-8714-4b8f-9243-0526063da4a5?format=xml&api-key=YOUR-KEY"
 
 cur.executescript('''DROP TABLE IF EXISTS revenue;''')
 cur.execute('''CREATE TABLE  revenue
@@ -63,5 +63,5 @@ conn.commit()
 
 cur.close()
 
-https://api.data.gov.in/resource/b46200c1-ca9a-4bbe-92f8-b5039cc25a12?format=xml&api-key=579b464db66ec23bdd000001e54d9f049d9f423c7f0fea5b54317529
-https://api.data.gov.in/resource/6911b243-d924-404d-a587-7717bd7c7eb9?format=xml&api-key=579b464db66ec23bdd000001e54d9f049d9f423c7f0fea5b54317529
+#https://api.data.gov.in/resource/b46200c1-ca9a-4bbe-92f8-b5039cc25a12?format=xml&api-key=KEY
+#https://api.data.gov.in/resource/6911b243-d924-404d-a587-7717bd7c7eb9?format=xml&api-key=KEY
